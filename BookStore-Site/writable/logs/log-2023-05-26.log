@@ -1,0 +1,113 @@
+INFO - 2023-05-26 13:43:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-26 13:47:46 --> Invalid file: "producto\listar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('producto\\listar.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('producto\\listar', [], true)
+ 3 APPPATH\Controllers\ProductoController.php(11): view('producto\\listar')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->listarProducto()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-26 13:48:12 --> Invalid file: "\listar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('\\listar.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('\\listar', [], true)
+ 3 APPPATH\Controllers\ProductoController.php(11): view('\\listar')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->listarProducto()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-26 13:48:43 --> Invalid file: "listar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('listar.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('listar.php', [], true)
+ 3 APPPATH\Controllers\ProductoController.php(11): view('listar.php')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->listarProducto()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-26 13:48:45 --> Invalid file: "listar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('listar.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('listar.php', [], true)
+ 3 APPPATH\Controllers\ProductoController.php(11): view('listar.php')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->listarProducto()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-26 13:48:46 --> Invalid file: "listar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('listar.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('listar.php', [], true)
+ 3 APPPATH\Controllers\ProductoController.php(11): view('listar.php')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->listarProducto()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-26 13:48:49 --> Invalid file: "listar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('listar.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('listar.php', [], true)
+ 3 APPPATH\Controllers\ProductoController.php(11): view('listar.php')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->listarProducto()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-26 13:50:03 --> Invalid file: "producto/listar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('producto/listar.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('producto/listar', [], true)
+ 3 APPPATH\Controllers\ProductoController.php(11): view('producto/listar')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->listarProducto()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-26 13:51:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-26 13:51:28 --> Invalid file: "producto/listar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('producto/listar.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('producto/listar', [], true)
+ 3 APPPATH\Controllers\ProductoController.php(11): view('producto/listar')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->listarProducto()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-26 13:52:04 --> Invalid file: "listar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('listar.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('listar', [], true)
+ 3 APPPATH\Controllers\ProductoController.php(12): view('listar')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->listarProducto()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-26 13:52:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-26 13:52:13 --> Invalid file: "listar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('listar.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('listar', [], true)
+ 3 APPPATH\Controllers\ProductoController.php(12): view('listar')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->listarProducto()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-26 13:53:30 --> Invalid file: "producto/listar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('producto/listar.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('producto/listar.php', [], true)
+ 3 APPPATH\Controllers\ProductoController.php(12): view('producto/listar.php')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->listarProducto()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-26 13:53:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-26 13:53:39 --> Invalid file: "producto/listar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('producto/listar.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('producto/listar.php', [], true)
+ 3 APPPATH\Controllers\ProductoController.php(12): view('producto/listar.php')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductoController->listarProducto()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-26 13:54:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

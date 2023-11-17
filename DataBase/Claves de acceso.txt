@@ -1,0 +1,5 @@
+usuario cliente: aimaLopez@gmail.com
+password cliente: 11223344
+
+usuario administrador: ulisesabrahan858@gmail.com
+password administrador: 11223344

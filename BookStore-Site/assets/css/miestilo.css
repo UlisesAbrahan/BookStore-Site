@@ -1,0 +1,397 @@
+/*estilos generales*/
+
+section {
+    display: flex;
+    flex-direction:column;    /*align y justify para poner el en centro del contenedor*/
+    align-items: center;
+    justify-content: center;
+
+   
+}
+
+.cuadricula {
+
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cuadricula1 {
+
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+}
+
+.cuadricula2 {
+
+    display: inline-block;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/*texto justificado*/
+
+.justificado {
+    text-align: justify;
+}
+
+/*fuentes*/
+
+.Letra{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.pInicio{
+
+    padding: 70px 0px 70px;
+
+}
+
+
+
+/*fondos*/
+
+.fondo {
+    background-color: #070707;
+}
+
+.fondo1 {
+    background-color:#F8F9FA; 
+}
+
+
+
+/*color de letras*/
+
+.color {
+    color: #070707;
+}
+
+.color1 {
+    color: #fff;
+}
+
+.color2 {
+    color: #d6645e;
+}
+
+.p30 {
+    padding: 30px;
+}
+
+.p15 {
+    padding: 15px;
+}
+
+/*Barra de navegacion */
+.navbar {
+    padding: 1rem;
+    background-color:#F1F3F4;
+   
+}
+
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between; /*espacio entre los elementos*/
+}
+
+.alinear {
+    display: flex;
+    align-items: end;
+}
+
+
+/*titulos*/
+
+.Subtitulo {
+    text-align: initial;
+    justify-content: initial;
+    padding-bottom: 10px;
+    font-size: 35px;
+    font-weight: 100;
+}
+
+.Subtitulo2 {
+   
+   
+    padding-bottom: 10px;
+  
+    font-size: 18px;
+}
+
+.Subtitulo3 {
+    font-size: 25px; 
+    font-weight: 100; 
+}
+
+/*footer*/
+
+.contenedor-footer {
+
+    margin: 30px 30px 30px 30px;
+    
+}
+
+.moverTitulo {
+    display: flex;
+    text-align: initial;
+    justify-content: initial;
+    
+}
+
+.moverIconos {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: end;
+}
+
+.SacarDeco {
+    text-decoration: none;
+}
+
+.tamaño {
+   
+    min-height: 100px; /*altura minima*/
+    text-align: center;
+    
+}
+
+.borde {
+
+    border: solid;
+}
+
+
+
+/* Seccion tarjetas */
+
+.espaciadoT {
+    margin-bottom: 20px;
+    padding-right: 30px
+}
+
+
+
+.cambiarTarj {
+    width: 100%;
+    margin: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0px 1px 10px rgba(243, 220, 220, 0.4);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.cambiarTarj:hover {
+    box-shadow: 5px 5px 20px rgba(243, 220, 220, 0.8);
+    transform: translate(-3%); /*cuando pasemos el cursor le da un efecto de traslado*/
+}
+
+.imgTienda {
+    width: 100%; /*100 del contenedor del padre */                        /*imagen responsiva*/
+    border-radius: 15px;
+    box-shadow: 0px 3px 5px rgba(102, 96, 96, 0.8)
+}
+
+/* Seccion acordeon */
+
+
+ .colorH2 {
+    color:#0a0a0a ;
+    background:#F8F9FA;
+    font-size: 18px;
+} 
+
+.accordion-button:not(.collapsed) {
+    background-color: #2f2f30;
+    color: #fff;
+}
+
+.img-cont {
+    width: 75vw; /*tamaño contenedor, 75 del ancho de la pantalla */
+   max-width: 1000px; 
+   min-width: 320px;
+   margin: auto;
+}
+
+
+.formEdit {
+    border-left: 1px solid #fff;
+    padding-left: 20px;
+}
+
+
+
+.inputEdit-text{
+    border: none;
+    background: none;
+    outline: 0;
+    border-bottom: 1px solid #fff;
+}
+
+.formH3 {
+    font-size: 15px;
+
+}
+
+.formImg {
+    border: 3px solid;
+    background: #fff;
+    border-radius: 50%;
+    margin: 20px 10px 0px 0px;
+}
+
+.editBoton {
+    width: 150px;
+    border: 2px solid #fff;
+    margin: 20px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 20;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.editBoton:hover {
+    background:#d6645e;
+    box-shadow: 0 0 10px #8a6e7e;
+}
+
+
+
+
+/*Pagina comercializacion*/
+
+.comercializacion .row div {
+    height: 350px;
+    }
+
+
+
+
+.imgComerc {
+    border-radius: 50px;
+    margin-top: 15px;
+   
+    
+}
+
+.columna {
+    padding: 10px;
+    border-right: 2px solid #8080804d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.bordeDerech {
+    border-right: 2px solid #8080804d;
+}
+
+.bordeIsquier {
+    border-left: 2px solid #8080804d;
+}
+
+.tamañoCons {
+    width: 50px;
+    height: 50px;
+}
+
+.sectionContact {
+    min-height: 100px; /*altura minima*/
+    text-align: center;
+
+}
+
+/* pagina de contacto */
+
+.contacto {
+    background-color: #0a0a0a;
+    color: #fff;
+    padding: 0 1.5em;
+}
+
+.contentContact {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+
+.container-wrapper {
+    box-shadow: 0 0 20px 0 rgba(255,255,255, .3);
+    padding: 10px;
+}
+
+.formu {
+    background-color: #9c8f8f;
+}
+
+.infor {
+    background-color: #312f2f;
+}
+
+.editP {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+/*Adaptable (Responsivo) */
+
+/*desaparece el logo en el menu cuando esta en tamaños moviles*/
+@media screen and (max-width:767px) {
+    .navbar-brand {
+        display: none;
+    }
+}
+
+
+/* Estilos para la versión impresa */
+@media print {
+    .no-print {
+        display: none;
+    }
+}
+
+/* Estilos para la versión impresa */
+@media print {
+    /* Ocultar botón de impresión en la versión impresa */
+    .btn-print {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*block:elementos en bloque ocupan el 100% del ancho
+inline: uno del lado del otro, ocupan su contenido*/
+
+
+
+   
+   

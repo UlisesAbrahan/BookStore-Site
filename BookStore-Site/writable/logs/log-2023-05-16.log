@@ -1,0 +1,180 @@
+INFO - 2023-05-16 20:26:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-16 20:29:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-16 20:30:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-16 20:33:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-16 20:33:38 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', '', '', 'bd_aimaraayelen...', 3306, '', 0)
+#1 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\app\Controllers\User_controller.php(50): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\CodeIgniter.php(934): App\Controllers\User_controller->save()
+#10 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User_controller))
+#11 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#3 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#5 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#6 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#7 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\app\Controllers\User_controller.php(50): CodeIgniter\BaseModel->save(Array)
+#8 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\CodeIgniter.php(934): App\Controllers\User_controller->save()
+#9 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User_controller))
+#10 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-16 20:33:38 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`nombre`, `apellido`, `telefono`, `email`, `password`, `id_perfil`, `estado`, `created_at`, `updated_at`) VALUES (:nombre:, :apellido:, :telefono:, :email:, :password:, :id_perfil:, :estado:, :created_at:, :updated_at:)', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 6 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 7 APPPATH\Controllers\User_controller.php(50): CodeIgniter\BaseModel->save([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User_controller->save()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User_controller))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-16 20:36:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-16 20:36:21 --> mysqli_sql_exception: Table 'bd_aimaraayelenfernandez.usuarios' doesn't exist in C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\app\Controllers\User_controller.php(50): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\CodeIgniter.php(934): App\Controllers\User_controller->save()
+#10 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User_controller))
+#11 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-16 20:36:21 --> Table 'bd_aimaraayelenfernandez.usuarios' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `usuarios` (`nombre`, `apellido`, `telefono`, `email`, `password`, `id_perfil`, `estado`, `created_at`, `updated_at`) VALUES (\'Aimara\', \'fernandez\', \'3344332\', \'ayelenfer879@gmail.com\', \'$2y$10$eT/KrL21/Waj6kihhaT6senOKet3tJ.RrL2DdjZEHkRoM7zSlBwaK\', \'2\', \'activo\', \'2023-05-16 20:36:21\', \'2023-05-16 20:36:21\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuarios` (`nombre`, `apellido`, `telefono`, `email`, `password`, `id_perfil`, `estado`, `created_at`, `updated_at`) VALUES (\'Aimara\', \'fernandez\', \'3344332\', \'ayelenfer879@gmail.com\', \'$2y$10$eT/KrL21/Waj6kihhaT6senOKet3tJ.RrL2DdjZEHkRoM7zSlBwaK\', \'2\', \'activo\', \'2023-05-16 20:36:21\', \'2023-05-16 20:36:21\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuarios` (`nombre`, `apellido`, `telefono`, `email`, `password`, `id_perfil`, `estado`, `created_at`, `updated_at`) VALUES (\'Aimara\', \'fernandez\', \'3344332\', \'ayelenfer879@gmail.com\', \'$2y$10$eT/KrL21/Waj6kihhaT6senOKet3tJ.RrL2DdjZEHkRoM7zSlBwaK\', \'2\', \'activo\', \'2023-05-16 20:36:21\', \'2023-05-16 20:36:21\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`nombre`, `apellido`, `telefono`, `email`, `password`, `id_perfil`, `estado`, `created_at`, `updated_at`) VALUES (:nombre:, :apellido:, :telefono:, :email:, :password:, :id_perfil:, :estado:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\User_controller.php(50): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User_controller->save()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User_controller))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-16 20:38:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-16 20:38:19 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\app\Controllers\User_controller.php(50): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\CodeIgniter.php(934): App\Controllers\User_controller->save()
+#10 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User_controller))
+#11 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-16 20:38:19 --> Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `usuario` (`nombre`, `apellido`, `telefono`, `email`, `password`, `id_perfil`, `estado`, `created_at`, `updated_at`) VALUES (\'Aimara\', \'fernandez\', \'3344332\', \'ayelenfer879@gmail.com\', \'$2y$10$odmkB0Mf.QNf/70ubf5VsuuHol6UyZcfKMbZziXxRAZUh1hzWwF9G\', \'2\', \'activo\', \'2023-05-16 20:38:19\', \'2023-05-16 20:38:19\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuario` (`nombre`, `apellido`, `telefono`, `email`, `password`, `id_perfil`, `estado`, `created_at`, `updated_at`) VALUES (\'Aimara\', \'fernandez\', \'3344332\', \'ayelenfer879@gmail.com\', \'$2y$10$odmkB0Mf.QNf/70ubf5VsuuHol6UyZcfKMbZziXxRAZUh1hzWwF9G\', \'2\', \'activo\', \'2023-05-16 20:38:19\', \'2023-05-16 20:38:19\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuario` (`nombre`, `apellido`, `telefono`, `email`, `password`, `id_perfil`, `estado`, `created_at`, `updated_at`) VALUES (\'Aimara\', \'fernandez\', \'3344332\', \'ayelenfer879@gmail.com\', \'$2y$10$odmkB0Mf.QNf/70ubf5VsuuHol6UyZcfKMbZziXxRAZUh1hzWwF9G\', \'2\', \'activo\', \'2023-05-16 20:38:19\', \'2023-05-16 20:38:19\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuario` (`nombre`, `apellido`, `telefono`, `email`, `password`, `id_perfil`, `estado`, `created_at`, `updated_at`) VALUES (:nombre:, :apellido:, :telefono:, :email:, :password:, :id_perfil:, :estado:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\User_controller.php(50): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User_controller->save()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User_controller))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-16 20:39:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-16 20:39:54 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`bd_aimaraayelenfernandez`.`usuario`, CONSTRAINT `usuario_ibfk_1` FOREIGN KEY (`id_perfil`) REFERENCES `perfil` (`id_perfil`)) in C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\app\Controllers\User_controller.php(50): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\CodeIgniter.php(934): App\Controllers\User_controller->save()
+#10 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User_controller))
+#11 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Proyecto_Fernandez_Aimara\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-16 20:39:54 --> Cannot add or update a child row: a foreign key constraint fails (`bd_aimaraayelenfernandez`.`usuario`, CONSTRAINT `usuario_ibfk_1` FOREIGN KEY (`id_perfil`) REFERENCES `perfil` (`id_perfil`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `usuario` (`nombre`, `apellido`, `telefono`, `email`, `password`, `id_perfil`, `estado`) VALUES (\'Aimara\', \'fernandez\', \'3344332\', \'ayelenfer879@gmail.com\', \'$2y$10$zG5o1XyQ.Acch3TZiIwfyelgzrGc/xE5C8cOF.nbLbYInE/JJNqCK\', \'2\', \'activo\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuario` (`nombre`, `apellido`, `telefono`, `email`, `password`, `id_perfil`, `estado`) VALUES (\'Aimara\', \'fernandez\', \'3344332\', \'ayelenfer879@gmail.com\', \'$2y$10$zG5o1XyQ.Acch3TZiIwfyelgzrGc/xE5C8cOF.nbLbYInE/JJNqCK\', \'2\', \'activo\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuario` (`nombre`, `apellido`, `telefono`, `email`, `password`, `id_perfil`, `estado`) VALUES (\'Aimara\', \'fernandez\', \'3344332\', \'ayelenfer879@gmail.com\', \'$2y$10$zG5o1XyQ.Acch3TZiIwfyelgzrGc/xE5C8cOF.nbLbYInE/JJNqCK\', \'2\', \'activo\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuario` (`nombre`, `apellido`, `telefono`, `email`, `password`, `id_perfil`, `estado`) VALUES (:nombre:, :apellido:, :telefono:, :email:, :password:, :id_perfil:, :estado:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\User_controller.php(50): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User_controller->save()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User_controller))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-16 20:45:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-16 20:46:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-16 20:50:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-16 20:50:51 --> Invalid file: "user_success.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user_success.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('user_success', [], true)
+ 3 APPPATH\Controllers\User_controller.php(59): view('user_success')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User_controller->success()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-16 20:53:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-16 20:54:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-16 20:56:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-16 22:46:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-16 22:54:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-16 22:58:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-16 22:59:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-16 23:00:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-16 23:00:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-16 23:04:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-16 23:10:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-16 23:10:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-16 23:10:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-16 23:11:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-16 23:26:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-16 23:27:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-16 23:29:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-16 23:29:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-16 23:33:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-16 23:33:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-16 23:40:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-16 23:41:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
